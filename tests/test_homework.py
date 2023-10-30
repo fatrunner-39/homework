@@ -4,7 +4,7 @@ from pages.homepage import HomePageSearchHelper
 from pages.account_page import AccountSearchHelper
 
 
-@allure.feature('Dog Api')
+@allure.feature('Homework')
 def test_homework(browser, fibonacci: int):
     main_page = HomePageSearchHelper(browser)
     account_page = AccountSearchHelper(browser)
