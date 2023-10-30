@@ -9,7 +9,9 @@ def browser():
     selenium_grid_url = "http://172.17.0.1:4444"
 
     chrome_options = webdriver.ChromeOptions()
-    driver = webdriver.Remote(command_executor=selenium_grid_url, options=chrome_options)
+    driver = webdriver.Remote(
+        command_executor=selenium_grid_url, options=chrome_options
+    )
     driver.maximize_window()
 
     yield driver
@@ -28,5 +30,3 @@ def fibonacci():
         a = b
         b = c
     return b
-
-
